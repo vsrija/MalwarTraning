@@ -1,0 +1,12 @@
+{
+  "name": "screenshot-app",
+  "version": "1.0.0",
+  "main": "camera.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^26.2.0",
+    "screenshot-desktop": "^1.14.0"
+  }
+}

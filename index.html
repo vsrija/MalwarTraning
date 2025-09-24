@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Take Photos</title>
+  </head>
+  <body>
+    <h2>📸 Taking 5 Photos from Webcam...</h2>
+    <video id="video" autoplay playsinline style="display:none;"></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <p id="status"></p>
+
+    <script>
+      const { ipcRenderer } = require('electron');
+
+      async function takePhotos() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+          const video = document.getElementById('video');
+          video.srcObject = stream;
+          await video.play();
+
+          const canvas = document.getElementById('canvas');
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          const ctx = canvas.getContext('2d');
+
+          for (let i = 0; i < 5; i++) {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            const dataUrl = canvas.toDataURL('image/png');
+            const buffer = Buffer.from(dataUrl.split(',')[1], 'base64');
+
+            ipcRenderer.send('save-photo', { buffer, index: i });
+
+            document.getElementById("status").innerText = `Saved ${i + 1}/5 photos...`;
+
+            await new Promise(r => setTimeout(r, 1000)); // 1 sec delay
+          }
+
+          stream.getTracks().forEach(track => track.stop());
+          document.getElementById("status").innerText = "✅ All 5 photos saved!";
+        } catch (err) {
+          document.getElementById("status").innerText = "❌ Camera error: " + err.message;
+          console.error(err);
+        }
+      }
+
+      window.onload = takePhotos;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delete Photos</title>
+  </head>
+  <body>
+    <h2>⚠ Delete all files in D:\Photos</h2>
+    <button id="deleteBtn">Delete Now</button>
+    <p id="status"></p>
+
+    <script>
+      const { ipcRenderer } = require('electron');
+
+      document.getElementById('deleteBtn').addEventListener('click', async () => {
+        const result = await ipcRenderer.invoke('delete-files');
+        document.getElementById('status').innerText = result.message;
+      });
+    </script>
+  </body>
+</html>
