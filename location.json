@@ -1,0 +1,67 @@
+[
+  {
+    "method": "ip",
+    "geo": {
+      "provider": "ipwho.is",
+      "ip": "49.204.213.26",
+      "city": "Secunderabad",
+      "region": "Telangana",
+      "country": "India",
+      "latitude": 17.4399295,
+      "longitude": 78.4982741
+    },
+    "timestamp": "2025-10-03T09:30:17.310854Z"
+  },
+  {
+    "method": "ip",
+    "geo": {
+      "provider": "ipwho.is",
+      "ip": "49.204.213.26",
+      "city": "Secunderabad",
+      "region": "Telangana",
+      "country": "India",
+      "latitude": 17.4399295,
+      "longitude": 78.4982741
+    },
+    "timestamp": "2025-10-03T09:30:17.310854Z"
+  },
+  {
+    "method": "ip",
+    "geo": {
+      "provider": "ipapi.co",
+      "ip": "49.204.213.26",
+      "city": "Hyderabad",
+      "region": "Telangana",
+      "country": "India",
+      "latitude": 17.3843,
+      "longitude": 78.4583
+    },
+    "timestamp": "2025-10-03T09:33:13.383494Z"
+  },
+  {
+    "method": "ip",
+    "geo": {
+      "provider": "ipwho.is",
+      "ip": "49.204.213.26",
+      "city": "Secunderabad",
+      "region": "Telangana",
+      "country": "India",
+      "latitude": 17.4399295,
+      "longitude": 78.4982741
+    },
+    "timestamp": "2025-10-03T09:42:31.714996Z"
+  },
+  {
+    "method": "ip",
+    "geo": {
+      "provider": "ipapi.co",
+      "ip": "49.204.213.26",
+      "city": "Hyderabad",
+      "region": "Telangana",
+      "country": "India",
+      "latitude": 17.3843,
+      "longitude": 78.4583
+    },
+    "timestamp": "2025-10-03T09:52:57.865204Z"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "action": "device_info",
+    "info": {
+      "hostname": "DESKTOP-QHNQLR9",
+      "user": "User",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "cpu_count": 4,
+      "memory_total": 8274776064,
+      "memory_available": 470753280,
+      "disk_total": 314572795904,
+      "disk_used": 43371683840,
+      "disk_free": 271201112064,
+      "mac_address": "e4:02:9b:49:ed:3c",
+      "timestamp": "2025-10-03T09:29:56.980490Z"
+    },
+    "timestamp": "2025-10-03T09:29:56.980490Z"
+  },
+  {
+    "action": "screenshot",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\screenshot_1759463995.png",
+    "timestamp": "2025-10-03T09:30:05.812871Z"
+  },
+  {
+    "action": "location_snapshot",
+    "entry": {
+      "method": "ip",
+      "geo": {
+        "provider": "ipwho.is",
+        "ip": "49.204.213.26",
+        "city": "Secunderabad",
+        "region": "Telangana",
+        "country": "India",
+        "latitude": 17.4399295,
+        "longitude": 78.4982741
+      },
+      "timestamp": "2025-10-03T09:30:17.310854Z"
+    },
+    "timestamp": "2025-10-03T09:30:17.310854Z"
+  },
+  {
+    "action": "location_snapshot",
+    "entry": {
+      "method": "ip",
+      "geo": {
+        "provider": "ipwho.is",
+        "ip": "49.204.213.26",
+        "city": "Secunderabad",
+        "region": "Telangana",
+        "country": "India",
+        "latitude": 17.4399295,
+        "longitude": 78.4982741
+      },
+      "timestamp": "2025-10-03T09:30:17.310854Z"
+    },
+    "timestamp": "2025-10-03T09:30:17.336486Z"
+  },
+  {
+    "action": "record_audio",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\audio_1759463995.wav",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:30:17.959638Z"
+  },
+  {
+    "action": "record_video",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\video_1759463995.mp4",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:30:35.370284Z"
+  },
+  {
+    "action": "delete",
+    "target": "F:\\New folder",
+    "timestamp": "2025-10-03T09:30:48.167806Z"
+  },
+  {
+    "action": "webcam_photo",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\webcam_1759464152.png",
+    "timestamp": "2025-10-03T09:32:34.145602Z"
+  },
+  {
+    "action": "device_info",
+    "info": {
+      "hostname": "DESKTOP-QHNQLR9",
+      "user": "User",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "cpu_count": 4,
+      "memory_total": 8274776064,
+      "memory_available": 981422080,
+      "disk_total": 314572795904,
+      "disk_used": 43373699072,
+      "disk_free": 271199096832,
+      "mac_address": "e4:02:9b:49:ed:3c",
+      "timestamp": "2025-10-03T09:32:59.936648Z"
+    },
+    "timestamp": "2025-10-03T09:32:59.936648Z"
+  },
+  {
+    "action": "location_snapshot",
+    "entry": {
+      "method": "ip",
+      "geo": {
+        "provider": "ipapi.co",
+        "ip": "49.204.213.26",
+        "city": "Hyderabad",
+        "region": "Telangana",
+        "country": "India",
+        "latitude": 17.3843,
+        "longitude": 78.4583
+      },
+      "timestamp": "2025-10-03T09:33:13.383494Z"
+    },
+    "timestamp": "2025-10-03T09:33:13.399147Z"
+  },
+  {
+    "action": "screenshot",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\screenshot_1759464672.png",
+    "timestamp": "2025-10-03T09:41:12.807198Z"
+  },
+  {
+    "action": "screenshot",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\screenshot_1759464688.png",
+    "timestamp": "2025-10-03T09:41:29.056111Z"
+  },
+  {
+    "action": "webcam_photo",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\webcam_1759464693.png",
+    "timestamp": "2025-10-03T09:41:36.808196Z"
+  },
+  {
+    "action": "record_video",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\video_1759464706.mp4",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:42:00.864546Z"
+  },
+  {
+    "action": "record_audio",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\audio_1759464731.wav",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:42:16.861439Z"
+  },
+  {
+    "action": "device_info",
+    "info": {
+      "hostname": "DESKTOP-QHNQLR9",
+      "user": "User",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "cpu_count": 4,
+      "memory_total": 8274776064,
+      "memory_available": 1046880256,
+      "disk_total": 314572795904,
+      "disk_used": 43379257344,
+      "disk_free": 271193538560,
+      "mac_address": "e4:02:9b:49:ed:3c",
+      "timestamp": "2025-10-03T09:42:22.352420Z"
+    },
+    "timestamp": "2025-10-03T09:42:22.352420Z"
+  },
+  {
+    "action": "location_snapshot",
+    "entry": {
+      "method": "ip",
+      "geo": {
+        "provider": "ipwho.is",
+        "ip": "49.204.213.26",
+        "city": "Secunderabad",
+        "region": "Telangana",
+        "country": "India",
+        "latitude": 17.4399295,
+        "longitude": 78.4982741
+      },
+      "timestamp": "2025-10-03T09:42:31.714996Z"
+    },
+    "timestamp": "2025-10-03T09:42:31.768532Z"
+  },
+  {
+    "action": "delete",
+    "target": "F:\\New folder",
+    "timestamp": "2025-10-03T09:42:55.315296Z"
+  },
+  {
+    "action": "screenshot",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\screenshot_1759465309.png",
+    "timestamp": "2025-10-03T09:51:49.454630Z"
+  },
+  {
+    "action": "webcam_photo",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\webcam_1759465323.png",
+    "timestamp": "2025-10-03T09:52:06.178964Z"
+  },
+  {
+    "action": "record_video",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\video_1759465330.mp4",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:52:17.305569Z"
+  },
+  {
+    "action": "record_audio",
+    "file": "D:\\Malware\\electron-local-agent\\outputs\\audio_1759465341.wav",
+    "duration": 5.0,
+    "timestamp": "2025-10-03T09:52:26.692805Z"
+  },
+  {
+    "action": "device_info",
+    "info": {
+      "hostname": "DESKTOP-QHNQLR9",
+      "user": "User",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "cpu_count": 4,
+      "memory_total": 8274776064,
+      "memory_available": 826200064,
+      "disk_total": 314572795904,
+      "disk_used": 43382886400,
+      "disk_free": 271189909504,
+      "mac_address": "e4:02:9b:49:ed:3c",
+      "timestamp": "2025-10-03T09:52:52.153441Z"
+    },
+    "timestamp": "2025-10-03T09:52:52.153441Z"
+  },
+  {
+    "action": "device_info",
+    "info": {
+      "hostname": "DESKTOP-QHNQLR9",
+      "user": "User",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "cpu_count": 4,
+      "memory_total": 8274776064,
+      "memory_available": 816394240,
+      "disk_total": 314572795904,
+      "disk_used": 43382886400,
+      "disk_free": 271189909504,
+      "mac_address": "e4:02:9b:49:ed:3c",
+      "timestamp": "2025-10-03T09:52:52.195329Z"
+    },
+    "timestamp": "2025-10-03T09:52:52.195329Z"
+  },
+  {
+    "action": "location_snapshot",
+    "entry": {
+      "method": "ip",
+      "geo": {
+        "provider": "ipapi.co",
+        "ip": "49.204.213.26",
+        "city": "Hyderabad",
+        "region": "Telangana",
+        "country": "India",
+        "latitude": 17.3843,
+        "longitude": 78.4583
+      },
+      "timestamp": "2025-10-03T09:52:57.865204Z"
+    },
+    "timestamp": "2025-10-03T09:52:57.923231Z"
+  },
+  {
+    "action": "delete",
+    "target": "F:\\New folder",
+    "timestamp": "2025-10-03T09:53:48.796426Z"
+  }
+]

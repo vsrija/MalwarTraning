@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Local Agent — Demo</title>
+<style>
+  body { font-family: Arial; padding: 18px; }
+  button { margin: 6px; padding: 10px 14px; }
+  #log { background: #f4f4f4; padding: 10px; height: 380px; overflow:auto; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>Local Agent — Safe Demo</h1>
+<div>
+  <button id="screenshot">Take Screenshot</button>
+  <button id="webcam">Webcam Photo</button>
+  <button id="video">Record Video (5s)</button>
+  <button id="audio">Record Audio (5s)</button>
+  <button id="info">Device Info</button>
+  <button id="loc">Location Snapshot (IP)</button>
+  <button id="delete">Delete File/Folder</button>
+</div>
+
+<h3>Logs & Output</h3>
+<div id="log">No actions yet.</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
