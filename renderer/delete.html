@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Path</title>
+  <style>
+    body {
+      font-family: Segoe UI, sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+    }
+    button {
+      background: #ff4444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #cc0000;
+    }
+    #result {
+      margin-top: 10px;
+      background: #222;
+      padding: 10px;
+      border-radius: 6px;
+      min-height: 40px;
+      white-space: pre-wrap;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Delete File or Folder</h2>
+  <input id="targetPath" placeholder="Enter full path (e.g. D:\\Test\\file.txt)">
+  <button onclick="deletePath()">Delete</button>
+  <div id="result"></div>
+
+  <script>
+    function deletePath() {
+      const path = document.getElementById("targetPath").value.trim();
+      if (!path) {
+        document.getElementById("result").textContent = "Enter a path!";
+        return;
+      }
+      window.agentAPI.performDelete(path);
+      document.getElementById("result").textContent = "Deleting...";
+    }
+
+    window.agentAPI.onDeleteResult((msg) => {
+      document.getElementById("result").textContent = msg;
+    });
+  </script>
+</body>
+</html>

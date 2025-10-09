@@ -1,0 +1,8 @@
+psutil
+pyautogui
+opencv-python
+soundfile
+sounddevice
+requests
+getmac
+pyrebase4

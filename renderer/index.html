@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Agent Control Panel</title>
+  <style>
+    body {
+      font-family: Segoe UI, sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #00eaff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .btn-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      justify-content: center;
+    }
+    button {
+      background: #00eaff;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #00b4cc;
+      transform: translateY(-1px);
+    }
+    #output {
+      margin-top: 30px;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+      min-height: 120px;
+      white-space: pre-wrap;
+      overflow-y: auto;
+      font-size: 14px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Local Agent Control Panel</h1>
+
+  <div class="btn-container">
+    <button onclick="run('screenshot')">Take Screenshot</button>
+    <button onclick="run('deviceinfo')">Device Info</button>
+    <button onclick="run('webcam_photo')">Webcam Photo</button>
+    <button onclick="run('record_audio')">Record Audio</button>
+    <button onclick="run('record_video')">Record Video</button>
+    <button onclick="run('location_snapshot')">Get Location</button>
+    <button onclick="openDelete()">Delete File/Folder</button>
+  </div>
+
+  <div id="output">Output will appear here...</div>
+
+  <script>
+    async function run(cmd) {
+      document.getElementById("output").textContent = "Running " + cmd + "...";
+      try {
+        const res = await window.agentAPI.runCommand(cmd);
+        document.getElementById("output").textContent =
+          res.stdout || res.stderr || "No response.";
+      } catch (err) {
+        document.getElementById("output").textContent = err.toString();
+      }
+    }
+
+    function openDelete() {
+      window.agentAPI.openDeleteWindow();
+    }
+
+    // Receive delete result back from popup
+    window.agentAPI.onDeleteResult((msg) => {
+      document.getElementById("output").textContent = msg;
+    });
+  </script>
+</body>
+</html>
