@@ -1,0 +1,12 @@
+{
+  "quick-audio": {
+    "action": "record_audio",
+    "args": { "duration": 5 },
+    "meta": { "purpose": "demo_quick_audio" }
+  },
+  "long-audio": {
+    "action": "record_audio",
+    "args": { "duration": 20 },
+    "meta": { "purpose": "demo_long_audio" }
+  }
+}

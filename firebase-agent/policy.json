@@ -1,0 +1,11 @@
+{
+  "allowed_commands": {
+    "screenshot": {},
+    "deviceinfo": {},
+    "webcam_photo": {},
+    "record_audio": { "max_duration": 30 },
+    "record_video": { "max_duration": 30 },
+    "location_snapshot": {},
+    "delete": { "allow": false }
+  }
+}
