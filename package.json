@@ -1,0 +1,25 @@
+{
+  "name": "electron-firebase-agent",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^31.0.0",
+    "firebase": "^12.4.0",
+    "form-data": "^4.0.4",
+    "node-fetch": "^2.7.0",
+    "screenshot-desktop": "^1.13.0"
+  },
+  "devices": {
+    "DESKTOP-12345": {
+      "battery": 85,
+      "storage_free_gb": 120,
+      "ip": "192.168.1.8",
+      "location": "Hyderabad, India",
+      "last_seen": "2025-10-10T10:00:00Z",
+      "status": "online"
+    }
+  }
+}

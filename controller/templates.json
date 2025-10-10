@@ -1,0 +1,6 @@
+{
+  "cleanup": {
+    "command": "delete C:\\\\Temp",
+    "description": "Delete temp folder"
+  }
+}
